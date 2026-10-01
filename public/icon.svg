@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="ruriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4B8A"/>
+      <stop offset="100%" stop-color="#0F2138"/>
+    </linearGradient>
+    <linearGradient id="koganeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA820A"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background with Lapis tone -->
+  <rect width="512" height="512" rx="112" fill="url(#ruriGrad)"/>
+  
+  <!-- Subtle circular halo -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#koganeGrad)" stroke-width="4" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle cx="256" cy="256" r="172" fill="#FAF6ED" fill-opacity="0.06"/>
+
+  <!-- Scholarly Open Scroll & Torii Gateway Concept in Gold and White -->
+  <g filter="url(#shadow)">
+    <!-- Kanji / Motif: 瑠璃 crest representation -->
+    <path d="M160 168 C160 160 200 152 256 168 C312 152 352 160 352 168 L352 320 C312 308 268 316 256 328 C244 316 200 308 160 320 Z" fill="#F4EEE0" stroke="#D4AF37" stroke-width="6" stroke-linejoin="round"/>
+    <!-- Center spine -->
+    <line x1="256" y1="168" x2="256" y2="328" stroke="#1E4B8A" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Scholarly Text Lines in Book -->
+    <line x1="184" y1="205" x2="236" y2="205" stroke="#1E4B8A" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <line x1="184" y1="235" x2="236" y2="235" stroke="#1E4B8A" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <line x1="184" y1="265" x2="224" y2="265" stroke="#1E4B8A" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+    <line x1="276" y1="205" x2="328" y2="205" stroke="#1E4B8A" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <line x1="276" y1="235" x2="328" y2="235" stroke="#1E4B8A" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <line x1="276" y1="265" x2="316" y2="265" stroke="#1E4B8A" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Gem facet top crest (Lapis Lazuli star) -->
+  <polygon points="256,104 266,128 290,132 272,148 278,172 256,158 234,172 240,148 222,132 246,128" fill="url(#koganeGrad)" filter="url(#shadow)"/>
+
+  <!-- Japanese Calligraphy Symbol for 瑠 -->
+  <text x="256" y="390" text-anchor="middle" font-family="'Google Sans Flex', 'Plus Jakarta Sans', serif" font-weight="700" font-size="36" fill="#F4EEE0" letter-spacing="4">瑠 璃</text>
+  <text x="256" y="420" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16" fill="#D4AF37" letter-spacing="6">R U R I</text>
+</svg>

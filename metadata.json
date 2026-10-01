@@ -1,0 +1,6 @@
+{
+  "name": "Ruri (瑠璃) - Educational Micro-Learning",
+  "description": "Mobile-first educational micro-learning Progressive Web App inspired by traditional Japanese scholarship (Lapis & Chalk aesthetic), powered by Gemini AI and Firebase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ruri: #1E4B8A;
+    --color-ruri-dark: #0F2138;
+    --color-ruri-light: #2C64B2;
+    --color-gofun: #F4EEE0;
+    --color-gofun-low: #FAF6ED;
+    --color-gofun-high: #E8DFCE;
+    --color-kogane: #D4AF37;
+    --color-kogane-light: #EBD47C;
+    --color-kogane-dark: #9A7B1C;
+    --color-on-surface: #0F2138;
+    --color-surface-variant: #E3D9C6;
+  }
+
+  body {
+    background-color: var(--color-gofun);
+    color: var(--color-on-surface);
+    font-family: 'Google Sans Flex', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-display {
+    font-family: 'Google Sans Flex', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .font-kanji {
+    font-family: 'Shippori Mincho', serif;
+  }
+
+  /* Safe Area Support for iOS devices (iPhone 16e baseline) */
+  .safe-top {
+    padding-top: max(env(safe-area-inset-top), 12px);
+  }
+  .safe-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 16px);
+  }
+}
+
+/* Custom scrollbars with scholarly aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EEE0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CEB8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E4B8A;
+}
+
+/* Material 3 touch target enforcement */
+.touch-target-48 {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/* Keyframes for Educational Graphic */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(7px) rotate(-1.5deg);
+  }
+}
+
+@keyframes floatDelay {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-1deg);
+  }
+}
+
+@keyframes spinOrbital {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 5.5s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: floatDelay 6s ease-in-out 1s infinite;
+}
+
+.animate-spin-orbital {
+  animation: spinOrbital 24s linear infinite;
+  transform-origin: 196px 175px;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 36s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+.animate-pulse-delay {
+  animation: pulseSlow 3.2s ease-in-out 1.2s infinite;
+}
+
+.animate-ping-slow {
+  animation: pulseSlow 2.5s ease-in-out 0.6s infinite;
+}
